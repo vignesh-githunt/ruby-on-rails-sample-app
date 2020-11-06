@@ -33,7 +33,7 @@ jobs:
     - name: Build
       run: |
         gem install bundler
-        bundle install --jobs 4 --retry 3
+      
     - name: lint
       run: bundle exec rubocop
     - name: rspec
